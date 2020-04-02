@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="receive_chat_name">12dp</dimen>
+    <dimen name="receive_chat_time">10dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

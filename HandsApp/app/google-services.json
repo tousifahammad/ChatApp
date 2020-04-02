@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "477542340641",
+    "firebase_url": "https://handsapp-1.firebaseio.com",
+    "project_id": "handsapp-1",
+    "storage_bucket": "handsapp-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477542340641:android:cecba859e5999426",
+        "android_client_info": {
+          "package_name": "com.bibhas.handsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477542340641-8d59if8r9v7okcghpi3ehpmevaq976j9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bibhas.handsapp",
+            "certificate_hash": "3b597bfbd0be179796d836d41fa7f754af434283"
+          }
+        },
+        {
+          "client_id": "477542340641-kup2e49e1j6knm6gss2vufprgr21nict.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuuz_TWn1eck09k-QxOZzVZDKP9QZN27Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477542340641-kup2e49e1j6knm6gss2vufprgr21nict.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

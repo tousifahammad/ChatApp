@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:background="@drawable/gradient_message_received">
+
+        <TextView
+            android:id="@+id/receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Sender Name"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/receive_chat_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/received_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:text="10:10PM"
+            android:textSize="@dimen/receive_chat_time" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/message_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/receiver_name"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/doc_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="audio_image"
+                android:drawableLeft="@drawable/icons_pdf"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="abcdefgh.pdf"
+                android:textAlignment="textStart" />
+
+            <ImageView
+                android:id="@+id/download_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="audio_download_image"
+                android:scaleType="center"
+                android:visibility="gone"
+                app:srcCompat="@drawable/img_save_white" />
+
+            <LinearLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_image"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#5b5b5b"
+                    android:indeterminate="false"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:progressDrawable="@color/cardview_light_background"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/percent_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:text="0%"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gradient_message_sent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/message_image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/doc_file_name2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="audio_image"
+                android:drawableLeft="@drawable/icons_pdf"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="file.pdf"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/download_icon2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="audio_download_image"
+                android:scaleType="center"
+                android:visibility="gone"
+                app:srcCompat="@drawable/img_save_white" />
+
+            <LinearLayout
+                android:id="@+id/progress_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_image2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#5b5b5b"
+                    android:indeterminate="false"
+                    android:progressDrawable="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/percent_image2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:text="111"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
